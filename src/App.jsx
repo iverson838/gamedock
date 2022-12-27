@@ -1,4 +1,5 @@
-import "./categories.scss";
+import CategoryItem from "./Components/CategoryItem";
+import "./Category.scss";
 
 const directory = [
   {
@@ -31,17 +32,8 @@ const directory = [
 function App() {
   return (
     <div className="categories-container">
-      {directory.map(({ title, id, imageUrl }) => (
-        <div key={id} className="category-container">
-          <div
-            className="background-image"
-            style={{ backgroundImage: `url(${imageUrl})` }}
-          />
-          <div className="category-body-container">
-            <h2>{title}</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
+      {directory.map((props) => (
+        <CategoryItem key={props.id} category={props} />
       ))}
     </div>
   );
