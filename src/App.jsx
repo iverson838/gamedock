@@ -1,6 +1,7 @@
 import Home from "./routes/Home";
 import NavBar from "./routes/NavBar";
 import SignIn from "./routes/SignIn";
+
 import { Route, Routes } from "react-router-dom";
 
 function App() {
