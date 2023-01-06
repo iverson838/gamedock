@@ -5,16 +5,13 @@ import {
   signInWithGoogleRedirect,
 } from "../Utilities/firebase";
 import SignUpForm from "../Components/SignUpForm";
+import SignInForm from "../Components/SignInForm";
+import "./SignIn.scss";
 
 const SignIn = () => {
-  const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    const userDocRef = await createUserDoc(user);
-  };
-
   return (
-    <div>
-      <button onClick={logGoogleUser}>google</button>
+    <div className="auth-container">
+      <SignInForm />
       <SignUpForm />
     </div>
   );
