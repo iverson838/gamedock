@@ -1,9 +1,3 @@
-import {
-  auth,
-  signInWithGooglePopup,
-  createUserDoc,
-  signInWithGoogleRedirect,
-} from "../Utilities/firebase";
 import SignUpForm from "../Components/SignUpForm";
 import SignInForm from "../Components/SignInForm";
 import "./SignIn.scss";
