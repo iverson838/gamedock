@@ -1,6 +1,6 @@
 const SHOP_DATA = [
   {
-    title: "Hats",
+    title: "Computers",
     items: [
       {
         id: 1,
@@ -59,7 +59,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: "Sneakers",
+    title: "Components",
     items: [
       {
         id: 10,
@@ -112,7 +112,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: "Jackets",
+    title: "Storage",
     items: [
       {
         id: 18,
@@ -147,7 +147,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: "Womens",
+    title: "Image and Sound",
     items: [
       {
         id: 23,

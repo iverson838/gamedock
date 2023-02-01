@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -10,18 +11,16 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-
 import {
   getFirestore,
   doc,
-  setDoc,
   getDoc,
+  getDocs,
+  setDoc,
   collection,
   writeBatch,
   query,
-  getDocs,
 } from "firebase/firestore";
-import { isRouteErrorResponse } from "react-router-dom";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -52,8 +51,8 @@ export const addCollectionAndDocuments = async (
   collectionKey,
   objectsToAdd
 ) => {
-  const collectionRef = collection(db, collectionKey);
   const batch = writeBatch(db);
+  const collectionRef = collection(db, collectionKey);
 
   objectsToAdd.forEach((object) => {
     const docRef = doc(collectionRef, object.title.toLowerCase());
